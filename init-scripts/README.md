@@ -1,6 +1,6 @@
 Example scenario:
 
-export VAULT_ADDR=10.19.241.58
+export VAULT_ADDR=demo-vault-tls-vault.default.svc.cluster.local
 
 ./init.sh $VAULT_ADDR vault-init.json
 

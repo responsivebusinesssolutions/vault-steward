@@ -5,4 +5,7 @@ RUN apt update \
 COPY init-scripts/* /vault-scripts/
 RUN chmod 744 /vault-scripts/*
 
+COPY ca.crt /usr/local/share/ca-certificates/kubernetes-cluster.crt
+RUN update-ca-certificates
+
 CMD /bin/bash
